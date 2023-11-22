@@ -1,0 +1,12 @@
+Gli IOC che possiamo visualizzare sono diversi, vediamo da scansione che la sorgente "192.168.200.100" effettua una scansione attraverso il protocollo TCP su porte critiche come la 445 che utilizza il protocollo SMB.
+Di conseguenza risulta un traffico in entrata da sorgenti sospette.
+
+Si evidenziano anche multiple richieste TCP a intervalli in un range di porte note, quali anche la 21, assegnata al protocollo FTP.
+Possibile iniezione/sottrazione dei dati.(eventualità)
+
+E' possibile che vengano utilizzate come vettore d'attacco verso la macchina target.
+
+Alcune contromisure possono essere l'inserimento di policy nel FW per poter filtrare le richieste in entrata sulla macchina target.
+
+Tool come Wireshark continuano a risultare utili per la monitorazione del traffico di rete e permette una risposta più immediata in casi di attacchi mirati come in questo caso.(Port Scanning)
+Dispositivi come IDS possono essere utili per tracciare un eventuale modifica ai file(logfile) 
